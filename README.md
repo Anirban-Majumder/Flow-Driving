@@ -1,6 +1,6 @@
 # Flow Driving
 
-Flow Driving is an interactive driving game that uses hand gestures or arrow keys for control. The game leverages the power of Three.js for 3D rendering and MediaPipe for hand gesture recognition.
+Flow Driving is an interactive driving game that uses hand gestures or arrow keys for control. The game leverages the power of Three.js for 3D rendering and AI models for hand gesture recognition.
 
 ## Features
 
