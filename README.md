@@ -36,7 +36,7 @@ Flow Driving is an interactive driving game that uses hand gestures or arrow key
 - **Three.js**: For 3D rendering.
     - [Three.js](https://threejs.org/)
 - **MediaPipe**: For hand gesture recognition.
-    - [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html)
+    - [MediaPipe Hands](https://github.com/google-ai-edge/mediapipe/)
 - **HTML5**: For structuring the web page.
 - **CSS3**: For styling the web page.
 - **JavaScript**: For game logic and interactivity.
@@ -67,6 +67,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [Three.js](https://threejs.org/) for the amazing 3D library.
-- [MediaPipe](https://google.github.io/mediapipe/) for the hand gesture recognition solution.
+- [MediaPipe](https://github.com/google-ai-edge/mediapipe/) for the hand gesture recognition solution.
 - Fonts by [Google Fonts](https://fonts.google.com/).
 - Made with ❤️ by Anirban Majumder.
