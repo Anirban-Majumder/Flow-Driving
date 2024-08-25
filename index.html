@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Driving</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <script src="js/script.js" type="module" defer></script>
+    <script src='https://unpkg.com/three@0.146.0/build/three.min.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/postprocessing/EffectComposer.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/postprocessing/ShaderPass.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/shaders/CopyShader.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/postprocessing/RenderPass.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/shaders/LuminosityHighPassShader.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/postprocessing/UnrealBloomPass.js'></script>
+    <script src='https://unpkg.com/three@0.146.0/examples/js/objects/Reflector.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+<body>
+    <div id="root" class="game"></div>
+    <div id="startScreen" class="start-screen">
+        <h1 class="game-title">Flow Driving</h1>
+        <p class="control-info">Use Arrow Keys or Hand Gestures to Control</p>
+        <button id="startButton" class="start-button">Start Game</button>
+        <p class="disclaimer">Camera permission required. All data stays on your device.</p>
+    </div>
+    <div id="gameover" style="display: none;">
+      <h1 class="game-title">Game Over</h1>
+      <button id="homeButton">Home</button>
+      <button id="restartButton">Restart</button>
+    </div>
+    <video id="inputVideo" style="display:none;"></video>
+    <canvas id="handCanvas" class="hand-overlay"></canvas>
+    <div id="loadingMessage" class="loading-message">Loading...</div>
+    <footer id="footer">
+        <p>Made with ❤️ by Anirban Majumder</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000000;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+.game {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.game.-loaded {
+    opacity: 1;
+}
+
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+#gameover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.5);
+}
+
+#gameover button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+
+#gameover button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+.game-title {
+	font-family: 'Zen Tokyo Zoo', cursive;
+	text-align: center;
+    font-size: 4rem;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+	color: #ffd9e2;
+	text-shadow: 0 0 0 transparent,
+                0 0 10px #f751f7,
+                0 0 20px rgba(255, 0, 60, 0.5),
+                0 0 40px #f751f7,
+                0 0 100px #f751f7,
+                0 0 200px #f751f7,
+                0 0 300px #f751f7,
+                0 0 500px #f751f7,
+                0 0 1000px #f751f7;
+	animation: animate 3s infinite alternate;
+}
+
+@keyframes animate {
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 0.8;
+	}
+	43% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	46% {
+		opacity: 1;
+	}
+}
+.control-info {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #00ffff;
+}
+
+.start-button {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.start-button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+.start-button:hover:not(:disabled) {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: #717171;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hand-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #00ffff;
+    display: none;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.loading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #00ffff;
+    display: none;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffd9e2;
+    text-shadow: 0 0 10px #f751f7,
+                 0 0 20px rgba(255, 0, 60, 0.5),
+                 0 0 40px #f751f7,
+                 0 0 100px #f751f7;
+}
