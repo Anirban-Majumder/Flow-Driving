@@ -437,7 +437,7 @@ export class SandboxWorld extends THREE.Group {
         this.#lastSpawnTime = 0;
         this.#initEnemyCars();
         this.crashSound = new Audio('./crash.mp3');
-        this.driftSound = new Audio('./brake.m4a');
+        this.driftSound = new Audio('./bb.mp3');
         this.isDriftSoundPlaying = false;
         this.crashSound.volume = 0.8;
         this.driftSound.volume = 0.08;
