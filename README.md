@@ -2,6 +2,9 @@
 
 Flow Driving is an interactive driving game that uses hand gestures or arrow keys for control. The game leverages the power of Three.js for 3D rendering and AI models for hand gesture recognition.
 
+https://github.com/user-attachments/assets/745385ff-eba7-4852-86c4-a394e7ccd82b
+
+
 ## Features
 
 - Control the car using arrow keys or hand gestures.
@@ -15,7 +18,7 @@ Flow Driving is an interactive driving game that uses hand gestures or arrow key
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/anirbanmajumder0/flow-driving.git
+    git clone https://github.com/anirban-majumder/flow-driving.git
     ```
 2. Navigate to the project directory:
     ```sh
