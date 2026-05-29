@@ -1,38 +1,54 @@
 # Flow Driving
 
-Flow Driving is an interactive driving game that uses hand gestures or arrow keys for control. The game leverages the power of Three.js for 3D rendering and AI models for hand gesture recognition.
+Flow Driving is an interactive 3D driving game you control with your bare hand. Steer, accelerate, and brake using hand gestures captured by your webcam — or fall back to the arrow keys. It's built with Three.js for 3D rendering and MediaPipe for real-time hand gesture recognition.
+
+**🎮 Play it live: [flow-driving.vercel.app](https://flow-driving.vercel.app)**
 
 https://github.com/user-attachments/assets/745385ff-eba7-4852-86c4-a394e7ccd82b
 
+## Controls
+
+The game tracks your **right hand** through the webcam. (Only the right hand is supported.)
+
+| Gesture | Action |
+| --- | --- |
+| ✋ Open your hand — stretch out all five fingers | Speed up |
+| ✊ Close your hand — curl all fingers into a fist, bringing them close together | Slow down |
+| 👈 Tilt your hand to the **left** | Move left |
+| 👉 Tilt your hand to the **right** | Move right |
+
+Prefer a keyboard? The **arrow keys** work too.
 
 ## Features
 
-- Control the car using arrow keys or hand gestures.
+- Control the car with right-hand gestures or the arrow keys.
 - Realistic 3D graphics powered by Three.js.
-- Hand gesture recognition using MediaPipe.
+- Real-time hand gesture recognition using MediaPipe.
 - Start screen with game instructions.
-- Game over screen with options to restart or go to the home screen.
+- Game over screen with options to restart or return home.
 - Responsive design for different screen sizes.
 
-## Installation
+## Getting Started
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/anirban-majumder/flow-driving.git
+    git clone https://github.com/Anirban-Majumder/Flow-Driving.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd flow-driving
+    cd Flow-Driving
     ```
 3. Install the dependencies:
     ```sh
-    npm install
+    pnpm install
     ```
 4. Start the development server using Vite:
     ```sh
-    npm run dev
+    pnpm dev
     ```
-5. Open your web browser and go to the URL provided by Vite (usually `http://localhost:5173`).
+5. Open your web browser and go to the URL provided by Vite (usually `https://localhost:5173`).
+
+> The dev server runs over HTTPS so the browser will grant webcam access for hand tracking. Allow camera permissions when prompted.
 
 ## Technologies Used
 
@@ -40,6 +56,7 @@ https://github.com/user-attachments/assets/745385ff-eba7-4852-86c4-a394e7ccd82b
     - [Three.js](https://threejs.org/)
 - **MediaPipe**: For hand gesture recognition.
     - [MediaPipe Hands](https://github.com/google-ai-edge/mediapipe/)
+- **Vite**: For development and bundling.
 - **HTML5**: For structuring the web page.
 - **CSS3**: For styling the web page.
 - **JavaScript**: For game logic and interactivity.
